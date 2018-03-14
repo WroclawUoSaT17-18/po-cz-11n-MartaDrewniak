@@ -1,0 +1,113 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApp1
+{
+    class program
+    {
+
+        class Prostopadlscian
+        {
+            public int a;
+            public int b;
+            public int c;
+
+            public Prostopadlscian()
+            {
+                a = 0;
+                b = 0;
+                c = 0;
+            }
+            public Prostopadlscian(int wymiar1, int wymiar2, int wymiar3)
+            {
+                a = wymiar1;
+                b = wymiar2;
+                c = wymiar3;
+            }
+            public int pole()
+            {
+                Console.WriteLine("pole twojej bryly to:");
+                return (a * b * 2 + 2 * a * c + 2 * b * c);
+            }
+            public int objetosc()
+            {
+                Console.WriteLine("objetosc twojej bryly to:");
+                return (a * b * c);
+            }
+        }
+
+
+        class Walec
+        {
+
+            public int r;
+            public int h;
+
+            public Walec()
+            {
+                r = 0;
+                h = 0;
+
+            }
+            public Walec(int wymiar4, int wymiar5)
+            {
+                r = wymiar4;
+                h = wymiar5;
+
+            }
+            public int pole()
+            {
+                Console.WriteLine("pole twojej bryly to:");
+                return (2*3 * r * r + 3*2* r * h);
+            }
+            public int objetosc()
+            {
+                Console.WriteLine("Objetosc twojej bryly to:");
+                return (3 * r * r * h);
+            }
+        }
+
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Powiedz, jaka bryla ciê ineresuje 1-prostopadloscian, 2-walec");
+
+
+            int z = int.Parse(Console.ReadLine());
+
+            if (z == 1)
+            {
+                Console.WriteLine("Wybrales prostopadloscian, teraz podaj jego wymiary. Zacznijmy od szerokosci:");
+                int f = int.Parse(Console.ReadLine());
+                Console.WriteLine("Teraz dlugosc:");
+                int g = int.Parse(Console.ReadLine());
+                Console.WriteLine("I na koniec wysokosc:");
+                int t = int.Parse(Console.ReadLine());
+                Prostopadlscian bryla2 = new Prostopadlscian(f, g, t);
+                Console.WriteLine(bryla2.objetosc());
+                Console.WriteLine(bryla2.pole());
+                Console.ReadKey();
+            }
+
+            else if (z == 2)
+            {
+                Console.WriteLine("Wybrales Stozek, teraz podaj jego wymiary zacznijmy od promienia:");
+                int j = int.Parse(Console.ReadLine());
+                Console.WriteLine("Teraz wysokosc:");
+                int k = int.Parse(Console.ReadLine());
+                Walec bryla1 = new Walec(j, k);
+                Console.WriteLine(bryla1.pole());
+                Console.WriteLine(bryla1.objetosc());
+                Console.ReadKey();
+            }
+
+            else if (z != 1 || z != 2)
+            {
+                Console.WriteLine("No to konczymy :)");
+                Console.ReadKey();
+            }
+        }
+    }
+}
