@@ -1,0 +1,10 @@
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\bin\Debug\kostka1.exe.config
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\bin\Debug\kostka1.exe
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\bin\Debug\kostka1.pdb
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.csprojResolveAssemblyReference.cache
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.Oblicz.resources
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.Properties.Resources.resources
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.csproj.GenerateResource.cache
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.csproj.CoreCompileInputs.cache
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.exe
+C:\Users\marta\Desktop\projekt\kostka1\kostka1\obj\Debug\kostka1.pdb
