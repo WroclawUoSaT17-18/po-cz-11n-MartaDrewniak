@@ -116,7 +116,7 @@ namespace kostka1
 
         //===============|    Metody  |================//
 
-        void obrot_R() //         R' gdzies jest blad
+        void obrot_R0() //         R' gdzies jest blad
         {
             pojemnik_tymczasowy_1 = gora_3;
             pojemnik_tymczasowy_2 = gora_6;
@@ -228,27 +228,27 @@ namespace kostka1
             przod_9 = pojemnik_tymczasowy_1;
             przod_8 = pojemnik_tymczasowy_3;
         }
-        void obrot_B() //                 B jeszcze nie zaczelam , zrobiona plaszczyzna
+        void obrot_B() //                 B 
         {
-            pojemnik_tymczasowy_1 = gora_7;
-            pojemnik_tymczasowy_2 = gora_8;
-            pojemnik_tymczasowy_3 = gora_9;
+            pojemnik_tymczasowy_1 = gora_1;
+            pojemnik_tymczasowy_2 = gora_2;
+            pojemnik_tymczasowy_3 = gora_3;
 
-            gora_7 = lewy_bok_9;
-            gora_8 = lewy_bok_6;
-            gora_9 = lewy_bok_3;
+            gora_1 = prawy_bok_3;
+            gora_2 = prawy_bok_6;
+            gora_3 = prawy_bok_9;
 
-            lewy_bok_3 = dol_1;
-            lewy_bok_6 = dol_2;
-            lewy_bok_9 = dol_3;
+            prawy_bok_3 = dol_9;
+            prawy_bok_6 = dol_8;
+            prawy_bok_9 = dol_7;
 
-            dol_1 = prawy_bok_7;
-            dol_2 = prawy_bok_4;
-            dol_3 = prawy_bok_1;
+            dol_9 = lewy_bok_7;
+            dol_8 = lewy_bok_4;
+            dol_7 = lewy_bok_1;
 
-            prawy_bok_1 = pojemnik_tymczasowy_1;
-            prawy_bok_4 = pojemnik_tymczasowy_2;
-            prawy_bok_7 = pojemnik_tymczasowy_3;
+            lewy_bok_7 = pojemnik_tymczasowy_1;
+            lewy_bok_4 = pojemnik_tymczasowy_2;
+            lewy_bok_1 = pojemnik_tymczasowy_3;
 
             pojemnik_tymczasowy_1 = tyl_3;
             pojemnik_tymczasowy_2 = tyl_2;
@@ -265,9 +265,29 @@ namespace kostka1
             tyl_8 = pojemnik_tymczasowy_3;
         }
 
-        /* obrot plaszczyzny
-         
-            U
+
+        void obrot_U() //                 U
+        {
+            pojemnik_tymczasowy_1 = przod_1;
+            pojemnik_tymczasowy_2 = przod_2;
+            pojemnik_tymczasowy_3 = przod_3;
+
+            przod_1 = prawy_bok_1;
+            przod_2 = prawy_bok_2;
+            przod_3 = prawy_bok_3;
+
+            prawy_bok_1 = tyl_1;
+            prawy_bok_2 = tyl_2;
+            prawy_bok_3 = tyl_3;
+
+            tyl_1 = lewy_bok_1;
+            tyl_2 = lewy_bok_2;
+            tyl_3 = lewy_bok_3;
+
+            lewy_bok_1 = pojemnik_tymczasowy_1;
+            lewy_bok_2 = pojemnik_tymczasowy_2;
+            lewy_bok_3 = pojemnik_tymczasowy_3;
+
             pojemnik_tymczasowy_1 = gora_3;
             pojemnik_tymczasowy_2 = gora_2;
             pojemnik_tymczasowy_3 = gora_6;
@@ -282,8 +302,30 @@ namespace kostka1
             gora_9 = pojemnik_tymczasowy_1;
             gora_8 = pojemnik_tymczasowy_3;
 
+        }
 
-            D
+        void obrot_D() //                 D
+        {
+            pojemnik_tymczasowy_1 = przod_7;
+            pojemnik_tymczasowy_2 = przod_8;
+            pojemnik_tymczasowy_3 = przod_9;
+
+            przod_7 = lewy_bok_7;
+            przod_8 = lewy_bok_8;
+            przod_9 = lewy_bok_9;
+
+            lewy_bok_7 = tyl_7;
+            lewy_bok_8 = tyl_8;
+            lewy_bok_9 = tyl_9;
+
+            tyl_7 = prawy_bok_7;
+            tyl_8 = prawy_bok_8;
+            tyl_9 = prawy_bok_9;
+
+            prawy_bok_7 = pojemnik_tymczasowy_1;
+            prawy_bok_8 = pojemnik_tymczasowy_2;
+            prawy_bok_9 = pojemnik_tymczasowy_3;
+
 
             pojemnik_tymczasowy_1 = dol_3;
             pojemnik_tymczasowy_2 = dol_2;
@@ -299,9 +341,31 @@ namespace kostka1
             dol_9 = pojemnik_tymczasowy_1;
             dol_8 = pojemnik_tymczasowy_3;
 
+        }
 
 
-            R
+        void obrot_R() //                 R
+        {
+            pojemnik_tymczasowy_1 = gora_3;
+            pojemnik_tymczasowy_2 = gora_6;
+            pojemnik_tymczasowy_3 = gora_9;
+
+            gora_9 = przod_9;
+            gora_6 = przod_6;
+            gora_3 = przod_3;
+
+            przod_3 = dol_3;
+            przod_6 = dol_6;
+            przod_9 = dol_9;
+
+            dol_3 = tyl_7;
+            dol_6 = tyl_4;
+            dol_9 = tyl_1;
+
+            tyl_7 = pojemnik_tymczasowy_1;
+            tyl_4 = pojemnik_tymczasowy_2;
+            tyl_1 = pojemnik_tymczasowy_3;
+
             pojemnik_tymczasowy_1 = prawy_bok_3;
             pojemnik_tymczasowy_2 = prawy_bok_2;
             pojemnik_tymczasowy_3 = prawy_bok_6;
@@ -316,9 +380,65 @@ namespace kostka1
             prawy_bok_9 = pojemnik_tymczasowy_1;
             prawy_bok_8 = pojemnik_tymczasowy_3;
 
+        }
 
+        void obrot_w_lewo() //                OBRÓT KOSTKI w lewo  <--
+        {
+            przod_1 = prawy_bok_1;
+            przod_2 = prawy_bok_2;
+            przod_3 = prawy_bok_3;
+            przod_4 = prawy_bok_4;
+            przod_5 = prawy_bok_5;
+            przod_6 = prawy_bok_6;
+            przod_7 = prawy_bok_7;
+            przod_8 = prawy_bok_8;
+            przod_9 = prawy_bok_9;
 
-         */
+            prawy_bok_1 = tyl_1;
+            prawy_bok_2 = tyl_2;
+            prawy_bok_3 = tyl_3;
+            prawy_bok_4 = tyl_4;
+            prawy_bok_5 = tyl_5;
+            prawy_bok_6 = tyl_6;
+            prawy_bok_7 = tyl_7;
+            prawy_bok_8 = tyl_8;
+            prawy_bok_9 = tyl_9;
+
+            tyl_1 = lewy_bok_1;
+            tyl_2 = lewy_bok_2;
+            tyl_3 = lewy_bok_3;
+            tyl_4 = lewy_bok_4;
+            tyl_5 = lewy_bok_5;
+            tyl_6 = lewy_bok_6;
+            tyl_7 = lewy_bok_7;
+            tyl_8 = lewy_bok_8;
+            tyl_9 = lewy_bok_9;
+
+            pojemnik_tymczasowy_1 = przod_1;
+            pojemnik_tymczasowy_2 = przod_2;
+            pojemnik_tymczasowy_3 = przod_3;
+
+            lewy_bok_1 = pojemnik_tymczasowy_1;
+            lewy_bok_2 = pojemnik_tymczasowy_2;
+            lewy_bok_3 = pojemnik_tymczasowy_3;
+
+            pojemnik_tymczasowy_1 = przod_4;
+            pojemnik_tymczasowy_2 = przod_5;
+            pojemnik_tymczasowy_3 = przod_6;
+
+            lewy_bok_4 = pojemnik_tymczasowy_1;
+            lewy_bok_5 = pojemnik_tymczasowy_2;
+            lewy_bok_6 = pojemnik_tymczasowy_3;
+
+            pojemnik_tymczasowy_1 = przod_7;
+            pojemnik_tymczasowy_2 = przod_8;
+            pojemnik_tymczasowy_3 = przod_9;
+
+            lewy_bok_7 = pojemnik_tymczasowy_1;
+            lewy_bok_8 = pojemnik_tymczasowy_2;
+            lewy_bok_9 = pojemnik_tymczasowy_1;
+
+        }
 
 
         //===============|    Wybor KOloru  |================//                 
